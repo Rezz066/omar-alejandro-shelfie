@@ -10,4 +10,15 @@
         width: 12rem;
         aspect-ratio: 9/14;
     }
+
+    &__title{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+    }
+
+    &__name{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        font-style: italic;
+    }
 }
