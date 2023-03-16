@@ -1,8 +1,10 @@
+import Homepage from "./pages/Homepage/Homepage";
+import './App.scss'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to Shelfie</h1>
+    <div className="app">
+      <Homepage/>
     </div>
   );
 }

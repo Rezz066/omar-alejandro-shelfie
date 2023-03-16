@@ -1,0 +1,9 @@
+@use './styles/partials/global.scss' as *;
+
+.app{
+    position: absolute;
+    background-image: url('./assets/polygon-scatter-haikei.svg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
