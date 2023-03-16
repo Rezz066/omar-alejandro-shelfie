@@ -7,4 +7,13 @@
         gap: 1rem;
         list-style-type: none;
     }
+
+    &__link{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: .5rem;
+        color: white;
+        background-color: #2fdfdf;
+    }
 }

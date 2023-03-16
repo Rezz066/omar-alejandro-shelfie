@@ -1,10 +1,11 @@
 import React from 'react';
 import Book from '../Book/Book'
+import './BookList.scss'
 
 const BookList = () => {
     return (
-        <div>
-            <h1>BookList</h1>
+        <div className="booklist">
+            <h1 className="booklist__title">My Book Shelf</h1>
             <Book/>
         </div>
     );
