@@ -4,6 +4,7 @@ import bookImage from '../../assets/images.jpg'
 import facebookIcon from '../../assets/Icon-facebook.svg'
 import instagramIcon from '../../assets/Icon-instagram.svg'
 import twitterIcon from '../../assets/Icon-twitter.svg'
+import BookReview from '../../components/BookReview/BookReview';
 
 const Bookpage = () => {
     return (
@@ -25,7 +26,7 @@ const Bookpage = () => {
             <div className="bookpage__container">
                     <h2 className="bookpage__titleSummary">Summary</h2>
                     <p className="bookpage__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur excepturi delectus molestiae doloribus! Ut, quisquam, asperiores vel aliquid iure quaerat totam necessitatibus quasi eaque minima consequatur ducimus. Obcaecati, earum suscipit!</p>
-                    <h2 className="bookpage__review">Review</h2>
+                    <BookReview/>
             </div>
         </div>
     );
