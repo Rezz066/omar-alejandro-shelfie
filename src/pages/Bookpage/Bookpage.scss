@@ -17,6 +17,10 @@
         padding-bottom: 1rem;
     }
 
+    &__block{
+        display: flex;
+    }
+
     &__image{
             width: 11rem;
             aspect-ratio: 9/14;
@@ -27,6 +31,19 @@
     &__content{
         padding-left: 2rem;
 
+    }
+
+    &__icons{
+        background-color: #000;
+        margin-left: 12rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__icons-image{
+        width: 3rem;
+        height: 3rem;
+        padding: .5rem;
     }
 
     &__title{
@@ -46,7 +63,7 @@
     }
 
     &__container{
-        padding-top: 2rem;
+        padding-top: 1rem;
         margin-left: 5rem;
         margin-right: 5rem;
     }
@@ -61,8 +78,17 @@
 
     &__summary{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 1rem;
         font-size: 1rem;
         font-weight: 400;
+        color: #000;
+    }
+
+    &__review{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
         color: #000;
     }
 }
