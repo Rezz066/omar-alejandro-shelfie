@@ -15,7 +15,7 @@ const Bookpage = () => {
             <div className="bookpage__container">
                     <h2 className="bookpage__titleSummary">Summary</h2>
                     <p className="bookpage__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur excepturi delectus molestiae doloribus! Ut, quisquam, asperiores vel aliquid iure quaerat totam necessitatibus quasi eaque minima consequatur ducimus. Obcaecati, earum suscipit!</p>
-                    <h2>Review</h2>
+                    <h2 className="bookpage__review">Review</h2>
             </div>
         </div>
     );
