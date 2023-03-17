@@ -13,7 +13,6 @@ const BookList = () => {
         axios.get('http://localhost:8080/books')
         .then(response => {
             setbookList(response.data)
-            console.log(bookList)
         })
     }, [])
 
