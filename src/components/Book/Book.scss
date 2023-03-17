@@ -4,10 +4,13 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+
+    &__box{
+        margin-left: 1rem;
+    }
 
     &__image{
-        width: 12rem;
+        width: 10rem;
         aspect-ratio: 9/14;
     }
 
