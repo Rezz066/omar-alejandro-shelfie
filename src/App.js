@@ -4,6 +4,7 @@ import BookUploadPage from "./pages/BookUploadPage/BookUploadPage";
 import './App.scss'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Header from './components/Header/Header'
+import LoadingPage from "./pages/LoadingPage/LoadingPage";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/' element={<Homepage/>}/>
                 <Route path="/bookpage/:bookId" element={<Bookpage/>}/>
                 <Route path='/upload' element={<BookUploadPage/>}/>
+                {/* <Route path="/loadingpage" element={<LoadingPage/>}/> */}
             </Routes>
         </BrowserRouter>
     </div>

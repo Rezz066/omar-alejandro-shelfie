@@ -17,7 +17,7 @@ const BookList = () => {
     }, [])
 
     if (bookList.length === 0){
-        return <h1>Loading...</h1>
+        return <h1>📒 📕 📗 📘 📙 Loading 📒 📕 📗 📘 📙 </h1>
     }
 
 

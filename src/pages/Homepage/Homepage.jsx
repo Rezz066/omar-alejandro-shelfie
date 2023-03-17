@@ -4,7 +4,6 @@ import './Homepage.scss'
 
 const Homepage = () => {
 
-
     return (
         <div className="homepage">
             <BookList  />

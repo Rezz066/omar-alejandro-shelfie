@@ -7,6 +7,7 @@ import BookReview from '../../components/BookReview/BookReview';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import LoadingPage from '../LoadingPage/LoadingPage';
 
 const Bookpage = () => {
 
@@ -29,7 +30,7 @@ const Bookpage = () => {
     }, [])
 
     if (!selectedBook){
-        return <h1>Loading...</h1>
+        return <h1>📒 📕 📗 📘 📙 Loading 📒 📕 📗 📘 📙 </h1>
     }
 
     return (
