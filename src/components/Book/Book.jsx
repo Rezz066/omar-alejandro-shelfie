@@ -9,7 +9,7 @@ const Book = ({book}) => {
 
         <div className="bookdisplay">
             <div className="bookdisplay__box">
-                <img src={bookPoster} alt="book-image" className="bookdisplay__image"/>
+                <img src={book.poster} alt="book-image" className="bookdisplay__image"/>
                 <h2 className="bookdisplay__title">{book.title}</h2>
                 <p className="bookdisplay__name">{book.author}</p>
             </div>

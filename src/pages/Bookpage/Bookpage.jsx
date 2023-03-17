@@ -1,6 +1,5 @@
 import React from 'react';
 import './Bookpage.scss'
-import bookImage from '../../assets/images.jpg'
 import facebookIcon from '../../assets/Icon-facebook.svg'
 import instagramIcon from '../../assets/Icon-instagram.svg'
 import twitterIcon from '../../assets/Icon-twitter.svg'
@@ -16,17 +15,16 @@ const Bookpage = () => {
     const { bookId } = useParams()
 
     useEffect (() =>{
-        axios.get('http://localhost:8081/books')
+        axios.get('http://localhost:8080/books')
         .then(response => {
             const books = response.data.filter(book => { 
                 return book.id === bookId
             })
 
-            return axios.get(`http://localhost:8081/books/${books[0].id}`)
+            return axios.get(`http://localhost:8080/books/${books[0].id}`)
         })
         .then(response => {
             setSelectedBook(response.data)
-            console.log(selectedBook)
         })
     }, [])
 
@@ -38,7 +36,7 @@ const Bookpage = () => {
         <div className="bookpage">
             <div className="bookpage__box">
                 <div className="bookpage__block">
-                <img src={bookImage} alt="book-poster" className="bookpage__image"/>
+                <img src={selectedBook.poster} alt="book-poster" className="bookpage__image"/>
                     <div className="bookpage__content">
                         <h2 className="bookpage__title">{selectedBook.title}</h2>
                         <p className="bookpage__author">{`By: ${selectedBook.author}`}</p>

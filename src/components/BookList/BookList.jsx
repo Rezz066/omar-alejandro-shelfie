@@ -10,7 +10,7 @@ const BookList = () => {
     const [bookList, setbookList] = useState ([])
 
     useEffect(() => {
-        axios.get('http://localhost:8081/books')
+        axios.get('http://localhost:8080/books')
         .then(response => {
             setbookList(response.data)
             console.log(bookList)
